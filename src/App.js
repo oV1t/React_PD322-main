@@ -8,7 +8,7 @@ import PizzaCreatePage from "./components/pizza/create";
 import {useState} from "react";
 import {AuthContext, initState} from "./authContext";
 import NovaPoshtaPage from "./components/novaPoshta";
-import CounterPage from "./components/counter";
+import ShopPage from "./components/shop";
 
 const App = () => {
 
@@ -30,7 +30,7 @@ const App = () => {
                     <Route path={"register"} element={<RegisterPage />} />
                     <Route path={"novaPoshta"} element={<NovaPoshtaPage />} />
 
-                    <Route path={"counter"} element={<CounterPage />} />
+                    <Route path={"counter"} element={<ShopPage />} />
 
                     <Route path={"pizza"} >
                         <Route path={"create"} element={<PizzaCreatePage />} />
